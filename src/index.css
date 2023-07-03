@@ -1,0 +1,133 @@
+.nav {
+	background-color: #212529;
+	width: 100%;
+	height: 10vh;
+	color: #d8d8d8;
+	font-weight: 700;
+	font-size: 2.5rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-shadow: 0px 2px 10px #212529;
+}
+
+.container {
+	height: 90vh;
+	display: flex;
+}
+
+.container .twothird {
+	flex-basis: 66.666%;
+	flex-grow: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.container .onethird {
+	flex-basis: 33.333%;
+	flex-grow: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.onethird h1 {
+	color: #1f2529;
+	font-size: 2.5rem;
+	padding-bottom: 20px;
+}
+.onethird .socials {
+	display: flex;
+	flex-direction: column;
+	/* background-color: red;	 */
+	text-align: center;
+	justify-content: center;
+}
+
+.twothird .imageandname {
+	display: flex;
+	flex-direction: row;
+	background-color: #d8d8d8;
+	justify-content: space-around;
+	/* width: 100%; */
+	/* background-color: pink; */
+}
+.tags {
+	margin-top: 1rem;
+	text-align: center;
+}
+.tags span {
+	background-color: #1f2529;
+	border-radius: 20px;
+	padding: 5px;
+	margin: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+	display: inline-block;
+	color: #d8d8d8;
+	font-weight: 500;
+}
+
+.aboutme h1 {
+	color: #1f2529;
+	font-size: 2.5rem;
+	padding-bottom: 20px;
+}
+
+.aboutme h2 {
+	color: #1f2529;
+	font-size: 2rem;
+}
+
+.aboutme .type {
+	color: red;
+	font-size: 2.5rem;
+}
+
+/* media query  */
+@media screen and (max-width: 770px) {
+	.twothird .imageandname {
+		display: flex;
+		flex-direction: column;
+		background-color: #d8d8d8;
+		justify-content: space-around;
+	}
+}
+
+@media screen and (max-width: 680px) {
+	.nav {
+		width: 100%;
+	}
+	.container {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.onethird .socials {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		text-align: center;
+		justify-content: center;
+	}
+
+	.onethird .socials a:first-child {
+		align-items: center;
+		padding-top: 10px;
+		padding-left: 12px;
+		padding-right: 12px;
+	}
+	.onethird .socials a:nth-child(5) {
+		align-items: center;
+		padding-top: 15px;
+		padding-left: 12px;
+		padding-right: 12px;
+	}
+
+	.aboutme {
+		text-align: center;
+	}
+}
